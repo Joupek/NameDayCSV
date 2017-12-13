@@ -14,14 +14,14 @@ namespace NameDayParser
             {
                 if (args.Length < 1 || args.Length > 1)
                 {
-                     throw new Exception("Give date in format dd.MM.yyyy");
+                     throw new Exception("Give date in format d.M.yyyy");
                 }
                 var datearg = args[0];
                 if (NameDay.IsDateTime(datearg))
                 {
                     var seekdate = DateTime.Parse(datearg);
                     var nameDay = new NameDay();
-                    var result = nameDay.FindNameDay(seekdate.ToString("dd.MM."));
+                    var result = nameDay.FindNameDay(seekdate.ToString("d.M."));
                     if(!string.IsNullOrEmpty(result))
                         Console.WriteLine(result);
                     else
