@@ -10,6 +10,7 @@ namespace NameDayCSV
     {
         static void Main(string[] args)
         {
+            var t = "";
         }
     }
 }
